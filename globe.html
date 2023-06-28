@@ -1,28 +1,6 @@
-<!--<!DOCTYPE html>-->
-<html ng-app="app">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Interactive Map</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/93930/de-flag.ico" />
-    <!--<script src="../bower_components/angular/angular.min.js"></script>
-    <script src="../bower_components/leaflet/dist/leaflet.js"></script>
-    <script src="../dist/angular-leaflet-directive.min.js"></script>
-    <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />-->
-    <link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
-  </head>
-  <body ng-controller="GermanMapCtrl">
-    <leaflet center="center" events="events" legend="legend" defaults="defaults" geojson="geojson"></leaflet>
-    <div class="map-box country-data f32">
-      <div class="col flag" ng-class="selectedCountryData.flag"></div>
-      <div class="col">
-        <span class="row">{{selectedCountryData.en.name || selectedCountry.properties.name || 'No country'}}</span>
-        <span class="row">{{selectedCountryData.de.name}}</span>
-      </div>
-      <div class="col capital">
-        <span class="row">{{selectedCountryData.en.capital}}</span>
-        <span class="row">{{selectedCountryData.de.capital}}</span>
-      </div>
-    </div>
-    <div ng-show="showCenterCoords" class="map-box coordinates">center: {lat: {{center.lat | number:4}}, lng: {{center.lng | number:4}}, zoom: {{center.zoom}}}</div>
-  </body>
-</html>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xqeqwm" data-user="perfettiful" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/perfettiful/pen/xqeqwm">
+  Interactive Map - Angular.js</a> by Nathan Perfetti (<a href="https://codepen.io/perfettiful">@perfettiful</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
